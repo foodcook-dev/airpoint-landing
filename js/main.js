@@ -26,7 +26,7 @@ $(document).ready(function () {
     axios
       .get(`${API_ENDPOINT}/event/event/?event_id=${eventID}&influencer_code=${influencerID}`)
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         const data = response.data;
         const influencer_name = data?.influencer?.nickname;
         const influencer_image = data?.influencer?.profile_image_url;
