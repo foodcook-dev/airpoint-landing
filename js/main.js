@@ -12,8 +12,8 @@ $(document).ready(function () {
   const eventID = getQueryParam("event_id");
   const influencerID = getQueryParam("influencer_code");
 
-  console.log("event_id:", eventID);
-  console.log("influencer_code:", influencerID);
+  // console.log("event_id:", eventID);
+  // console.log("influencer_code:", influencerID);
 
   fetchImage(eventID, influencerID);
 
@@ -74,17 +74,17 @@ $(document).ready(function () {
       phone_number: phone,
     };
 
-    console.log("전송 데이터:", requestData);
+    // console.log("전송 데이터:", requestData);
 
     axios
       .post(`${API_ENDPOINT}/event/participate/`, requestData)
       .then((response) => {
-        console.log("신청 완료:", response.data);
+        // console.log("신청 완료:", response.data);
         alert("신청이 완료되었습니다!");
         location.reload();
       })
       .catch((error) => {
-        console.error("신청 실패:", error);
+        // console.error("신청 실패:", error);
         if (error?.response?.status === 404) {
           alert("이벤트 정보를 찾을 수 없습니다.");
           return;
