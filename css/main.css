@@ -165,10 +165,10 @@ body {
 
 @media (min-width: 769px) and (max-width: 1000px) {
   .open {
-    height: 1320px;
+    height: 1250px;
   }
   .open .collabo {
-    width: 450px;
+    width: 95%;
   }
 
   .open .title h1 .none {
@@ -186,7 +186,7 @@ body {
 /* history */
 .history {
   background: var(--main-bg-color);
-  height: 1530px;
+  height: 1580px;
   padding-top: 80px;
 }
 .history .history_top {
@@ -276,7 +276,7 @@ body {
     height: 1600px;
   }
   .history .history_top ul li {
-    width: 220px;
+    width: 95%;
   }
 }
 
@@ -326,7 +326,7 @@ body {
 
 @media (min-width: 769px) and (max-width: 1000px) {
   .deta .deta_flex li {
-    width: 145px;
+    width: 95%;
   }
 }
 
@@ -418,6 +418,11 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1000px) {
+  .point .point_flex {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .point .point_flex li {
     width: 146px;
   }
@@ -591,6 +596,19 @@ body {
   letter-spacing: 0;
   cursor: pointer;
 }
+
+#footer .inner .footer_text button a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 0;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
 #footer .inner .footer_text .none {
   display: none;
 }
@@ -701,6 +719,14 @@ body {
   display: block;
 }
 
+.join .agree_box .form_agree input [type="checkbox"] {
+  opacity: 40%;
+}
+
+input {
+  accent-color: #ff5500;
+}
+
 .join .show_animate {
   position: fixed;
 }
@@ -764,9 +790,10 @@ body {
     margin: 0 auto;
   }
   .form_wrap {
-    display: inline-block;
+    display: block;
     text-align: center;
-    margin-left: 30px;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .join .form_mobile {
