@@ -599,14 +599,6 @@ body {
 
 #footer .inner .footer_text button a {
   color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 800;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  padding: 10px;
-  border: 0;
-  letter-spacing: 0;
-  cursor: pointer;
 }
 
 #footer .inner .footer_text .none {
