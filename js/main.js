@@ -56,6 +56,15 @@ $(document).ready(function () {
       alert("전화번호를 입력하세요.");
       return;
     }
+    if (phone.includes("-")) {
+      alert("전화번호에 '-'를 제외하고 입력하세요.");
+      return;
+    }
+
+    if (phone.length !== 11 || !/^\d+$/.test(phone)) {
+      alert("전화번호는 11자리 숫자로 입력하세요.");
+      return;
+    }
 
     if (!isAgreed) {
       alert("개인정보 수집 및 마케팅 동의가 필요합니다.");
@@ -95,4 +104,47 @@ $(document).ready(function () {
         alert("신청에 실패했습니다. 다시 시도해 주세요.");
       });
   };
+
+  //join
+  function setScrollAnimate() {
+    var $join = $(".join");
+    var $historyTable = $(".history_table");
+    var joinHeight = $join.outerHeight();
+    var joinOriginalTop = $join.offset().top; // 원래 위치 저장
+
+    $(window).scroll(function () {
+      if ($historyTable.length) {
+        var historyTableTop = $historyTable.offset().top - 800;
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
+        var stopPosition = documentHeight - windowHeight - joinHeight; // 화면 끝 도달 지점
+
+        if (scrollTop >= historyTableTop && scrollTop < stopPosition) {
+          $join.css({
+            position: "fixed",
+            bottom: "0",
+            left: "0",
+            width: "100%",
+            opacity: 1,
+          });
+        } else if (scrollTop >= stopPosition) {
+          $join.css({
+            position: "absolute",
+            bottom: "0",
+            left: "0",
+            width: "100%",
+          });
+        } else {
+          $join.css({
+            position: "relative",
+            top: "auto",
+            opacity: 1,
+          });
+        }
+      }
+    });
+  }
+
+  setScrollAnimate();
 });
