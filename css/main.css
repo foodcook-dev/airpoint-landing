@@ -715,6 +715,10 @@ body {
   opacity: 40%;
 }
 
+.join .agree_box a {
+  color: #ffffff;
+}
+
 input {
   accent-color: #ff5500;
 }
