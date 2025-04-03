@@ -1,6 +1,6 @@
 const MAIN_HOST = "app.appairpoint.com";
 const TEST_HOST = "test.appairpoint.com";
-const DEV_FLAG = true;
+const DEV_FLAG = false;
 const API_ENDPOINT = DEV_FLAG ? `https://${TEST_HOST}` : `https://${MAIN_HOST}`;
 
 $(document).ready(function () {
