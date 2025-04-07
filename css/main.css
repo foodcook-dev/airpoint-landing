@@ -35,6 +35,20 @@ body {
 .open {
   height: 1130px;
 }
+
+.open .audit {
+  margin: 0 auto;
+  text-align: right;
+  width: 1060px;
+  padding-top: 30px;
+}
+
+.open .audit p {
+  font-size: 1.4rem;
+  color: #ffffff;
+  opacity: 60%;
+}
+
 .open .collabo {
   display: flex;
   justify-content: center;
@@ -136,6 +150,16 @@ body {
   .open {
     height: 1250px;
   }
+
+  .open .audit {
+    width: 95%;
+  }
+
+  .open .audit p {
+    line-height: 0;
+    font-size: 1.1rem;
+  }
+
   .open .collabo {
     width: 95%;
     margin: 30px auto;
@@ -167,6 +191,16 @@ body {
   .open {
     height: 1250px;
   }
+
+  .open .audit {
+    width: 95%;
+  }
+
+  .open .audit p {
+    line-height: 0;
+    font-size: 1.2rem;
+  }
+
   .open .collabo {
     width: 95%;
   }
