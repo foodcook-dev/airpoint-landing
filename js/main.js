@@ -13,46 +13,66 @@ $(document).ready(function () {
   $(".txt").hide();
 
   $(".click").click(function () {
-    $(".txt").stop().slideToggle();
+    const target = $(this).next(".txt");
+    target.stop().slideToggle();
+
+    // chevron 아이콘 회전
+    $(this).find(".chevron").toggleClass("active");
   });
 
+  var scheme = "airpoint://";
+  var androidStoreUrl = "https://play.google.com/store/apps/details?id=com.foodcook.airpoint";
+  var iosStoreUrl = "https://apps.apple.com/app/id6743425025";
+
   function getDeviceType() {
-    var ua = navigator.userAgent || "";
-
-    var isAndroid = /android/i.test(ua);
-    var isIOS = /iPhone|iPad|iPod/i.test(ua);
-
-    if (isAndroid) return "android";
-    if (isIOS) return "ios";
-    return "desktop";
+    var userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf("android") > -1) {
+      return "android";
+    } else if (userAgent.indexOf("iphone") > -1 || userAgent.indexOf("ipad") > -1) {
+      return "ios";
+    } else {
+      return "desktop";
+    }
   }
 
-  $(".backtest_button").click(function () {
-    var device = getDeviceType();
+  // 앱 열기
+  $(".app_open_button").click(function () {
+    var deviceType = getDeviceType();
 
-    var appScheme = "airpoint://";
-    var androidStoreURL = "https://play.google.com/store/apps/details?id=com.foodcook.airpoint";
-    var iosStoreURL = "https://apps.apple.com/app/id6743425025";
-
-    var storeURL = device === "android" ? androidStoreURL : device === "ios" ? iosStoreURL : "https://airpoint.kr"; // 데스크탑은 홈페이지로 이동 (스토어 링크 무의미하니까)
-
-    if (device === "desktop") {
-      alert("데스크탑에서는 앱을 사용할 수 없습니다.\n모바일에서 이용해 주세요.");
+    if (deviceType === "desktop") {
+      alert("모바일에서 이용해주세요.");
       return;
     }
 
-    var now = Date.now();
+    var clickedAt = Date.now();
 
-    var iframe = document.createElement("iframe");
-    iframe.style.display = "none";
-    iframe.src = appScheme;
-    document.body.appendChild(iframe);
+    window.location.href = scheme;
 
     setTimeout(function () {
-      var elapsed = Date.now() - now;
-      if (elapsed < 2000) {
-        window.location.href = storeURL;
+      var now = Date.now();
+      if (now - clickedAt < 2000) {
+        if (deviceType === "android") {
+          window.location.href = androidStoreUrl;
+        } else if (deviceType === "ios") {
+          window.location.href = iosStoreUrl;
+        }
       }
     }, 1500);
+  });
+
+  // 앱 다운로드 버튼
+  $(".app_download_button").click(function () {
+    var deviceType = getDeviceType();
+
+    if (deviceType === "desktop") {
+      alert("모바일에서 이용해주세요.");
+      return;
+    }
+
+    if (deviceType === "android") {
+      window.location.href = androidStoreUrl;
+    } else if (deviceType === "ios") {
+      window.location.href = iosStoreUrl;
+    }
   });
 }); /* end */

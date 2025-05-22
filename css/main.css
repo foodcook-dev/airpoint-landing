@@ -169,6 +169,8 @@ a {
   background: #ffffff;
   border-bottom: 0.2px solid #999999;
   align-items: center;
+  position: relative;
+  z-index: 99;
 }
 
 #header .h_inner {
@@ -183,6 +185,7 @@ a {
 #header .h_inner h1 img {
   display: block;
   padding-top: 5px;
+  width: 144px;
 }
 
 nav .gnb {
@@ -235,6 +238,7 @@ nav .gnb li:nth-child(2) a {
   }
 
   #header .h_inner h1 img {
+    max-width: 144px;
     width: 70%;
     padding-bottom: 10px;
   }
@@ -259,6 +263,7 @@ nav .gnb li:nth-child(2) a {
   }
 
   #header .h_inner h1 img {
+    max-width: 144px;
     width: 70%;
     padding-bottom: 10px;
   }
@@ -342,6 +347,7 @@ nav .gnb li:nth-child(2) a {
   position: absolute;
   right: 0;
   bottom: -7px;
+  z-index: 9;
 }
 
 #main .main_visual .inner {
@@ -1251,7 +1257,7 @@ nav .gnb li:nth-child(2) a {
 /* app */
 
 .app {
-  height: 2200px;
+  /* height: 2200px; */
   background: #ffffff;
   position: relative;
 }
@@ -1324,6 +1330,11 @@ nav .gnb li:nth-child(2) a {
   transform: translateY(3px);
 }
 
+.app .dropdown_wrap {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
 .app .dropdown {
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
@@ -1337,10 +1348,20 @@ nav .gnb li:nth-child(2) a {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.app .dropdown div img {
+.app .dropdown .chevron {
+  transition: transform 0.3s;
+  width: 24px;
+  height: 15px;
+  margin: auto 0;
+}
+.app .dropdown .chevron.active {
+  transform: rotate(180deg);
+}
+
+/* .app .dropdown div img {
   width: 45px;
   transform: scale(50%);
-}
+} */
 
 .app .dropdown div p {
   font-size: 2rem;
@@ -1385,7 +1406,7 @@ nav .gnb li:nth-child(2) a {
 
 @media (max-width: 768px) {
   .app {
-    height: 1780px;
+    /* height: 1780px; */
     position: relative;
   }
 
@@ -1433,9 +1454,9 @@ nav .gnb li:nth-child(2) a {
     align-items: center;
   }
 
-  .app .dropdown div img {
+  /* .app .dropdown div img {
     transform: scale(40%);
-  }
+  } */
 
   .app .dropdown div p {
     font-size: 1.4rem;
@@ -1458,7 +1479,7 @@ nav .gnb li:nth-child(2) a {
 
 @media (min-width: 769px) and (max-width: 1400px) {
   .app {
-    height: 1800px;
+    /* height: 1800px; */
     position: relative;
   }
 
