@@ -1369,6 +1369,10 @@ nav .gnb li:nth-child(2) a {
   color: #333333;
 }
 
+.app .dropdown .price_box {
+  display: block;
+}
+
 .app .dropdown .txt {
   color: #000000;
   font-size: 1.6rem;
@@ -1376,6 +1380,15 @@ nav .gnb li:nth-child(2) a {
   background: #f8f8f8;
   padding: 25px 35px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.app .dropdown .txt2 {
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: #f8f8f8;
+  /* padding: 25px 35px; */
+  /* border-bottom: 1px solid #e0e0e0; */
 }
 
 .app .dropdown table {
@@ -1466,8 +1479,12 @@ nav .gnb li:nth-child(2) a {
     font-size: 1.2rem;
   }
 
+  .app .dropdown .txt2 {
+    font-size: 1.2rem;
+  }
+
   .app .dropdown table {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
   }
 
@@ -1529,8 +1546,12 @@ nav .gnb li:nth-child(2) a {
     font-size: 1.4rem;
   }
 
+  .app .dropdown .txt2 {
+    font-size: 1.4rem;
+  }
+
   .app .dropdown table {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
   }
 
