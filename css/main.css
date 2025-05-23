@@ -165,11 +165,13 @@ a {
 
 #header {
   padding: 16px 0;
+  width: 100%;
   height: 80px;
   background: #ffffff;
   border-bottom: 0.2px solid #999999;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 99;
 }
 
@@ -290,11 +292,12 @@ nav .gnb li:nth-child(2) a {
     position: fixed;
     z-index: 100;
     left: 50%;
-    bottom: 5%;
+    bottom: 2px;
     min-width: 350px;
     height: 55px;
     border-radius: 10px;
-    background: var(--main-color);
+    color: var(--sub-bg-color);
+    background: #A4451A;
     text-align: center;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -315,12 +318,12 @@ nav .gnb li:nth-child(2) a {
     z-index: 100;
     position: fixed;
     left: 50%;
-    bottom: 5%;
+    bottom: 2px;
     min-width: 580px;
     height: 55px;
     border-radius: 10px;
     color: var(--sub-bg-color);
-    background: var(--main-color);
+    background: #A4451A;
     text-align: center;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -340,7 +343,7 @@ nav .gnb li:nth-child(2) a {
 #main .main_visual {
   position: relative;
   background: var(--main-color);
-  height: 830px;
+  height: 910px;
 }
 
 #main .main_visual .bg {
@@ -351,7 +354,7 @@ nav .gnb li:nth-child(2) a {
 }
 
 #main .main_visual .inner {
-  padding: 140px 5% 0 5%;
+  padding: 220px 5% 0 5%;
 }
 
 #main .main_visual h2 {
@@ -381,7 +384,7 @@ nav .gnb li:nth-child(2) a {
 @media (max-width: 768px) {
   #main .main_visual {
     background: var(--main-color) url("../images/mobile_01_bg.png") no-repeat center bottom;
-    height: 1055px;
+    height: 1120px;
     padding-top: 80px;
     position: relative;
   }
@@ -402,6 +405,7 @@ nav .gnb li:nth-child(2) a {
     text-align: center;
     font-size: 3rem;
     font-weight: 900;
+    padding-top: 70px;
   }
 
   #main .main_visual p {
@@ -419,8 +423,8 @@ nav .gnb li:nth-child(2) a {
 @media (min-width: 769px) and (max-width: 1400px) {
   #main .main_visual {
     background: var(--main-color) url("../images/tablet_01_bg_.png") no-repeat center bottom;
-    height: 1055px;
-    padding-top: 70px;
+    height: 1130px;
+    padding-top: 150px;
   }
 
   #main .main_visual .bg {
