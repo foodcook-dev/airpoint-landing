@@ -304,8 +304,14 @@ nav .gnb li:nth-child(2) a {
   height: 490px;
   border-radius: 30px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  background: url("../images/sub_video.png") no-repeat center;
+  /* background: url("../images/sub_video.png") no-repeat center; */
   cursor: pointer;
+}
+
+.method .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 .method .point {
@@ -340,8 +346,12 @@ nav .gnb li:nth-child(2) a {
   }
 
   .method .video {
-    height: 230px;
-    background: url("../images/tablet_sub_video.png") no-repeat center;
+    height: 180px;
+    border-radius: 20px;
+    /* background: url("../images/tablet_sub_video.png") no-repeat center; */
+  }
+  .method .video video {
+    border-radius: 20px;
   }
 
   .method .point {
