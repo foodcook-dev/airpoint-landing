@@ -9,6 +9,65 @@ $(document).ready(function () {
     });
   });
 
+  // popup
+  const openBtns = document.querySelectorAll('.open-popup')
+  const closeBtns = document.querySelectorAll('.popup-close')
+
+function openPopup(popupEl) {
+  popupEl.classList.add('active')
+  document.body.classList.add('modal-open')
+}
+
+function closePopup(popupEl) {
+  popupEl.classList.remove('active')
+  // 열려있는 팝업이 하나도 없을 때만 스크롤 잠금 해제
+  if (!document.querySelector('.popup.active')) {
+    document.body.classList.remove('modal-open')
+  }
+}
+
+// 열기: 버튼의 data-popup 값(id)으로 해당 팝업만 열기
+openBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const popupId = btn.dataset.popup
+    const popupEl = document.getElementById(popupId)
+    if (!popupEl) return
+
+    openPopup(popupEl)
+  })
+})
+
+// 닫기: 닫기 버튼이 속한 팝업만 닫기
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const popupEl = btn.closest('.popup')
+    if (!popupEl) return
+
+    closePopup(popupEl)
+  })
+})
+
+  // slide
+  const slide1 = new Swiper('.slide1', {
+      // 옵션 (parameters) 추가
+      slidesPerView: "auto",   // 카드가 여러 장 보이게
+      spaceBetween: 16,        // 카드 간격
+      speed: 450,
+      grabCursor: true,
+      watchSlidesProgress: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next", //다음 버튼
+        prevEl: ".swiper-button-prev", //이전 버튼
+      },
+
+      // 스크롤/터치로 살짝 넘길 때도 자연스럽게 "딱" 멈춤 느낌
+    freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+    });
+
   //dropdown
   $(".txt").hide();
 

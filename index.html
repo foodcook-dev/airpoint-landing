@@ -11,6 +11,9 @@
     <meta property="og:type" content="Responsive Website" />
     <title>에어포인트 홈페이지</title>
 
+    <!-- Material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
 
@@ -21,12 +24,14 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!-- js -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -72,10 +77,10 @@
         <div class="main_visual">
           <div class="inner">
             <h2 data-aos="fade-up" data-aos-duration="1500">
-              자동화 시대 <br />
-              이젠 투자도 시스템으로
+              8년간의 시뮬레이션으로<br>
+              검증된 투자 플랫폼
             </h2>
-            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">세상의 모든 투자 에어포인트로 간편하게</p>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">주식 투자는 에어포인트와 함께하세요</p>
 
             <ul class="store" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
               <li>
@@ -90,230 +95,346 @@
             <div class="bg"><img src="images/01_bg.png" alt="배경" /></div>
           </div>
           <!-- inner -->
+           <div class="bg_T"><img src="images/tablet_01_bg_.png" alt="태블릿배경" /></div>
+           <div class="bg_M"><img src="images/mobile_01_bg.png" alt="모바일배경" /></div>
         </div>
         <!-- main_visual -->
 
-        <div class="percent">
+        <div class="introduce">
           <div class="inner">
             <div class="top">
               <h2 data-aos="fade-up" data-aos-duration="1500">
-                <span>7년 백데이터 기반</span> <br />
-                검증된 시스템 매매
+                에어포인트란?
               </h2>
               <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                7년간의 시스템매매 백테스트 성과검증 내역을 <br />
-                기반으로 안정적인 성장을 이루고 있습니다.
+                매매 조건을 체계화해 투자 원칙으로 만들고,<br>
+                이를 8년간의 시뮬레이션으로 검증한<br>
+                수익형 시스템 매매 모델입니다.
               </p>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-              <div class="box_1"> <!-- 20251128 -->
-                <p>
-                  단기 에어포인트 <br />
-                  <span class="bold">연평균 수익률</span> <br />
-                  <span class="bold_2">(2018년부터 2024년까지)</span>
-                </p>
-                <p>연 <span>28.74%</span></p>
-              </div>
-
-              <div class="box_2"> <!-- 20251128 -->
-                <p>
-                  스윙 에어포인트 <br />
-                  <span class="bold">연평균 수익률</span> <br />
-                  <span class="bold_2">(2018년부터 2024년까지)</span>
-                </p>
-                <p>연 <span>49.57%</span></p>
-              </div>
-
-              <p class="small"> <!-- 20251128 --> * 위 수익률은 단기(1차 매수, 2차 매수 비중 각각 10%), 스윙(1차 매수 비중 20%) 기준 시스템 <br class="block" />
-                트레이딩 조건에 따라 산출된 백테스트 결과입니다</p>
+                <img src="images/02_01.png" alt="airpoint">
             </div>
           </div>
         </div>
-        <!-- percent -->
+        <!-- introduce -->
 
-        <div class="Backtest">
+        <div class="capture">
           <div class="inner">
             <div>
               <h2 data-aos="fade-up" data-aos-duration="1500">
-                모든 백테스트 내역 <br />
-                <span>100% 공개</span>
+                시스템 매매 <br />
+                <span>종목 포착</span>
               </h2>
               <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                2018년부터 현재까지 <br />
-                모든 에어포인트 포착종목을 <br />
-                어플에서 100% 투명하게 공개합니다.
+                상승 기대치가 높은 종목을 <br>
+                자동으로 포착해 제공합니다.
+              </p>
+              <div class="icon" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <div class="open-popup" data-popup="popup_1">
+                <a href="#">
+                <img src="images/03_icon1.png" alt="종목포착">
+                <p>종목포착
+                  <span class="material-symbols-outlined">
+                chevron_right</span></p>
+                </a>
+                </div>
+
+                <div class="open-popup" data-popup="popup_2">
+                  <a href="#">
+                <img src="images/03_icon2.png" alt="종목포착">
+                <p>보유종목
+                  <span class="material-symbols-outlined">
+                chevron_right</span></p>
+                </a>
+                </div>
+              </div><!-- icon -->
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><!-- 20251128 --><img src="images/03_01.png" alt="종목포착" /></div>
+          </div>
+          <!-- inner -->
+          </div>
+          <!-- capture -->
+
+        <div class="offer">
+          <div class="inner">
+            <div class="top">
+              <h2 data-aos="fade-up" data-aos-duration="1500">
+                포착된 종목에 대한 <br>
+                <span>종목 분석 자료 제공</span>
+              </h2>
+              <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                종목 포착 결과를 기반으로 해당 종목의 <br class="none"> 펀더멘털과 <br class="block">
+                주가 상승 모멘텀을 종합적으로 <br class="none"> 분석한 자료를 제공합니다.
               </p>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"><!-- 20251128 --><img src="images/03_01.png" alt="수익률" /></div>
-          </div>
-          <div class="button inner app_open_button"><a>에어포인트 종목 보러가기</a></div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+              <div>
+                <img src="images/04_01.png" alt="종목 분석 이미지">
+              </div>
+            </div>
+          </div> 
         </div>
-        <!-- Backtest -->
+        <!-- offer -->
 
-        <div class="character">
+        <div class="signal">
           <div class="inner">
-            <h2 data-aos="fade-up" data-aos-duration="1500">에어포인트 시스템<span> 포착 종목 특징</span></h2>
+            <div>
+              <h2 data-aos="fade-up" data-aos-duration="1500">
+                앱 내 메신저를 통해 <br>
+                제공되는 실시간 브리핑
+              </h2>
+              <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                종목 포착 시점부터 매매 종료까지의 전 과정을 <br>
+                앱 내 메신저인 ‘시그널’을 통해 실시간 제공합니다.
+              </p>
+            </div>
 
-            <!-- 20251128 -->
-            <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">단기 - 목표 수익률 5%</h3>
-            <ul class="c_flex" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"><img src="images/05_01.png" alt="시그널" /></div>
+          </div>
+          <div class="button inner app_open_button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a>에어포인트 종목 보러가기</a></div>
+        </div>
+        <!-- signal -->
+
+        <div class="trading">
+          <div class="inner">
+            <img src="images/06_top.png" alt="톱니바퀴 이미지">
+
+            <h2 data-aos="fade-up" data-aos-duration="1500"><span>증시 변동성과 시장 수급 리스크를 자동으로</span><br class="none">
+              반영하는 <br class="block"> 스마트 시스템매매</h2>
+              <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">개별 종목뿐만 아니라 시장 변동성, 시장 민감도, 수급 흐름 등 <br class="none">
+                거시적 조건을 함께 반영해 증시 리스크까지 대응합니다.</p>
+            
+            <ul class="c_flex" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
               <li>
-                <img src="images/04_01.png" alt="5거래일 이내 상승" />
-                <p class="m">
-                  1거래일 ~ 10거래일
+                <img src="images/06_01.png" alt="증시 상승 구간" />
+                <p class="title_1">
+                  증시 상승 구간
                 </p>
-                <p>83.0%</p>
+                <p class="sub_1">종목 포착 빈도 확대 <br>
+                  계좌 수익 극대화 전략</p>
               </li>
 
               <li>
-                <img src="images/04_02.png" alt="5거래일 이후 상승" />
-                <p class="m">
-                  11거래일 ~ 20거래일
+                <img src="images/06_02.png" alt="증시 하락 구간" />
+                <p class="title_2">
+                  증시 하락 구간
                 </p>
-                <p>7.8%</p>
-              </li>
-
-              <li>
-                <img src="images/04_03.png" alt="원칙 손절" />
-                <p class="m g">
-                  21거래일 ~ 30거래일
-                </p>
-                <p>4.4%</p>
+                <p class="sub_2">종목 포착 빈도 축소 <br>
+                  계좌 손실 최소화 전략</p>
               </li>
             </ul>
-
-            <!-- 20251128 -->
-            <div class="space" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><img src="images/04_check.png" alt="체크" /> 단기 시스템 종목 30거래일 이내 목표가 달성 확률 <span>95.2%</span></div>
-          
-            <!-- 20251128 -->
-            <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">스윙 - 목표 수익률 30%</h3>
-            <ul class="c_flex" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-              <li>
-                <img src="images/04_01.png" alt="5거래일 이내 상승" />
-                <p class="m">
-                  1거래일 ~ 20거래일
-                </p>
-                <p>66.5%</p>
-              </li>
-
-              <li>
-                <img src="images/04_02.png" alt="5거래일 이후 상승" />
-                <p class="m">
-                  21거래일 ~ 40거래일
-                </p>
-                <p>20.4%</p>
-              </li>
-
-              <li>
-                <img src="images/04_03.png" alt="원칙 손절" />
-                <p class="m">
-                  41거래일 ~ 60거래일
-                </p>
-                <p>5.0%</p>
-              </li>
-            </ul>
-
-            <!-- 20251128 -->
-            <div class="space" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><img src="images/04_check.png" alt="체크" /> 스윙 시스템 종목 목표가 달성 확률 <span>91.9%</span></div>
-
           </div>
         </div>
-        <!-- character -->
+        <!-- trading -->
 
-        <div class="plus">
+        <div class="time">
           <div class="inner">
-            <h2 data-aos="fade-up" data-aos-duration="1500"><span>[본업+투자]</span>두마리 토끼를 한번에!</h2>
+            <img src="images/07_top.png" alt="시계">
+
+            <h2 data-aos="fade-up" data-aos-duration="1500">주식투자에 쓰는 시간도 결국엔 돈.<br>
+              <span>에어포인트로 시간을 돌려받으세요.</span></h2>
+
+             <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><span class="open-popup" data-popup="popup_3">어떻게 계산되었나요?</span></a>
+
+             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+             <ul class="hour">
+              <li>직접 투자를 위해 <br>
+                소요되는 연 평균시간</li>
+              <li class="bold">약 170시간</li>
+             </ul>
+
+             <ul class="hour_2">
+              <li>에어포인트 투자를 위해 <br>
+                소요되는 연 평균시간</li>
+              <li class="bold">약 63시간</li>
+             </ul>
+             </div>
+
+             <div class="flex">
+              <div><span class="bold">107시간 절약</span></div>
+              <div class="b">
+                <span>영화 53편</span>을 더 볼 수 있는 시간 <br>
+                주말 <span>5시간씩 21일</span> <br>
+                퇴근 후 <span>하루 1시간씩 107일</span> <br>
+              </div>
+             </div>
+             
+             <img class="review review_P" src="images/07_Review.png" alt="리뷰 이미지">
+             <img class="review review_T" src="images/07_Review_T.png" alt="리뷰 이미지">
+             <img class="review review_M" src="images/07_Review_M.png" alt="리뷰 이미지">
+          </div>
+          <!-- inner -->
+        </div>
+        <!-- time -->
+
+        <div class="yield">
+          <div class="inner">
+            <img src="images/08_top.png" alt="수익률 이미지">
+
+            <h2 data-aos="fade-up" data-aos-duration="1500"><span>8년간의 시뮬레이션으로</span><br>
+              검증된 수익률을 확인하세요!</h2>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">2018년부터 현재까지의 포착된 모든 종목의 수익률 내역을 <br class="none">
+              앱에서 100% 투명하게 공개하고 있어요.</p>
+
+              <div class="swiper slide1">
+              <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+              <span class="title">
+                  연 평균 계좌 수익률
+                  <span class="sub">
+                  2018년 ~ 2025년 (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +38.13%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2025년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +38.33%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2024년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+                
+                <span class="value">
+                  +42.37%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2023년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +48.12%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2022년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +12.89%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2021년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +88.42%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2020년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +45.14%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2019년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +12.62%
+                </span>
+              </div>
+
+              <div class="swiper-slide">
+                <span class="title">
+                  2018년 계좌 수익률
+                  <span class="sub">
+                  (세전)
+                </span>
+                </span>
+
+                <span class="value">
+                  +17.14%
+                </span>
+              </div>
+
+              </div><!-- swiper-wrapper -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              </div><!-- swiper -->
+          </div>
+        </div>
+        <!-- yield -->
+
+        <div class="trust">
+          <div class="inner">
+            <h2 data-aos="fade-up" data-aos-duration="1500">에어포인트를 믿어도 될까요?</h2>
+
+              <img src="images/09_top.png" alt="자물쇠">
 
             <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
               <div class="item_1">
-                <div>
-                  <h3>종목포착</h3>
-                  <img src="images/05_01.png" alt="종목포착" />
-                </div>
-
-                <p>
-                  <span
-                    >아침 10분 (오전 8시 50분 ~ 9시) <br />
-                    장마감 (오후 3시 20분 ~ 3시 30분) <br
-                  /></span>
-                  하루 20분 투자
-                </p>
+                <img src="images/09_01.png" alt="금융감독원">
+                  <h3>금융감독원 정식 등록 업체</h3>
+                <p>에어포인트는 태양투자자문에서 개발한 어플로써, 투자자문 라이
+                  선스를 보유한 제도권 기업입니다. 금융전문인력 구성, 분기보고서
+                  제출, 매년 외부감사 등 금융사 요건들을 모두 충족하며 사업을 
+                  영위하고 있습니다.</p>
               </div>
 
               <div class="item_2">
-                <div>
-                  <h3>수익률</h3>
-                  <img src="images/05_02.png" alt="수익률" />
-                </div>
-
-                <p>
-                  <span
-                    >7년 백데이터 기준 <br />
-                    연평균 34.7% 수익</span
-                  ><br />
-                  <span class="small">(연 최저 22.39% ~ 최고 52.11%)</span>
-                </p>
-              </div>
-
-              <div class="item_3">
-                <div>
-                  <h3>시스템 리뷰</h3>
-                  <img src="images/05_03.png" alt="시스템 리뷰" />
-                </div>
-
-                <p>
-                  매일 제공되는 <br />
-                  <span>종목분석과 주간리뷰</span>
-                </p>
-              </div>
-
-              <div class="item_4">
-                <div>
-                  <h3>실시간뉴스</h3>
-                  <img src="images/05_04.png" alt="실시간뉴스" />
-                </div>
-
-                <p>
-                  시장의 이슈가 되는 <br />
-                  <span>실시간 뉴스 제공</span>
-                </p>
+               <img src="images/09_02.png" alt="에어포인트">
+                  <h3>검증된 시스템 매매</h3>
+                <p>8년간의 시뮬레이션으로 검증된 수익형 시스템 매매모델을
+                  기반으로, 상승 가능성이 높은 구간의 종목을 포착하고 투자판단에
+                  필요한 정보를 함께 제공합니다.</p>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- plus -->
-
-        <div class="port">
-          <div class="inner">
-            <h2 data-aos="fade-up" data-aos-duration="1500">모든 투자자가 따라올 수 있는<br class="none" /><span> 간편한 시스템매매</span></h2>
-            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><!-- 20251128 -->최대 10종목 포트구성, 시그널 기반 실시간 알림</p>
-            <div class="mobile"><img src="images/06_mobile.png" alt="종목포착" /></div>
-          </div>
-          <div class="bg"><!-- 20251128 --><img src="images/06_bg.png" alt="배경" /></div>
-        </div>
-        <!-- port -->
-
-        <div class="app">
-          <div class="inner">
-            <h2 data-aos="fade-up" data-aos-duration="1500">
-              언제 어디서나 간편하게 <br />
-              <span>‘에어포인트’ 어플 하나로</span>
-            </h2>
-
-            <div class="a_flex" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-              <div><!-- 20251128 --><img src="images/07_01.png" alt="시그널" /></div>
-
-              <div class="check">
-                <p><img src="images/07_check.png" alt="체크" />포착종목 알림 제공</p>
-                <p><img src="images/07_check.png" alt="체크" />시장 종합 브리핑 및 검증 대기 종목 안내</p>
-                <p><img src="images/07_check.png" alt="체크" />실시간 주요 뉴스 및 이슈 제공</p>
-              </div>
-            </div>
-
+            
             <div class="button app_download_button">
-              <a> <span>에어포인트 시작하기</span><img src="images/07_download.png" alt="다운로드" /> </a>
+              <a href="https://fine.fss.or.kr/fine/fncco/systemFncCo/list.do?menuNo=900038&pageIndex=1&src=&viewType=&searchTyin=&searchStr=%ED%83%9C%EC%96%91%ED%88%AC%EC%9E%90%EC%9E%90%EB%AC%B8"><span>제도권 기업 조회하기</span></a>
             </div>
 
             <div class="dropdown_wrap">
@@ -384,7 +505,7 @@
             <!-- dropdown -->
           </div>
         </div>
-        <!-- app -->
+        <!-- trust -->
       </div>
       <!-- main -->
 
@@ -398,9 +519,9 @@
           <div><span class="bold_2">이메일</span><span>info@suninvestment.co.kr</span></div>
 
           <address>
-            (주)태양투자자문 <br />
-            07255 서울특별시 영등포구 선유로 130 에이스 하이테크시티3 402호 <br />
-            대표이사 : 이요한 사업자등록번호 528-86-02892
+            (주)태양투자자문 <br>
+            07327 서울특별시 영등포구 국제금융로2길 17, 5층 501호(여의도동, 시티플라자) <br>
+            대표이사 : 이요한  사업자등록번호 528-86-02892
           </address>
 
           <p class="copy">Copyright &copy; 2023 태양투자자문 All Right Reserved.</p>
@@ -424,7 +545,90 @@
     </div>
     <!-- wrap -->
 
-    <script>
+          <!-- 팝업 -->
+        <div id="popup_1" class="popup">
+          <div class="dim" data-close></div>
+
+          <div class="panel" role="document">
+          <button type="button" class="close popup-close" aria-label="닫기" data-close>
+          <span aria-hidden="true">×</span>
+          </button>
+          <!-- Close -->
+          
+          <div class="content">
+          <h2 class="title">종목포착</h2>
+
+          <p>
+          오후 3시 20분, 포착종목이 자동으로 업데이트되며<br class="none">
+          종목 포착부터 성과검증이 완료되는 순간까지<br class="none">
+          주요 내용을 실시간 알림을 통해 알려드립니다.
+          </p>
+
+         <button class="app_download" onclick="window.open('https://play.google.com/store/apps/details?id=com.foodcook.airpoint&hl=ko','download')">앱 다운로드</button>
+          <!-- app_download -->
+          </div>
+          <!-- Content -->
+          </div>
+          <!-- Panel -->
+          </div>
+          <!-- popup -->
+
+          <!-- 팝업2 -->
+        <div id="popup_2" class="popup">
+          <div class="dim" data-close></div>
+
+          <div class="panel" role="document">
+          <button type="button" class="close popup-close" aria-label="닫기" data-close>
+          <span aria-hidden="true">×</span>
+          </button>
+          <!-- Close -->
+          
+          <div class="content">
+          <h2 class="title">종목보유</h2>
+
+          <p>
+            현재 보유 중인 종목의 매수가부터 목표가, 비중,<br>
+            손절가까지 앱에서 확인이 가능합니다.
+          </p>
+
+        <button class="app_download" onclick="window.open('https://play.google.com/store/apps/details?id=com.foodcook.airpoint&hl=ko','download')">앱 다운로드</button>
+          <!-- app_download -->
+          </div>
+          <!-- Content -->
+          </div>
+          <!-- Panel -->
+          </div>
+          <!-- popup_2 -->
+
+          <!-- 팝업3 -->
+        <div id="popup_3" class="popup">
+          <div class="dim" data-close></div>
+
+          <div class="panel" role="document">
+          <button type="button" class="close popup-close" aria-label="닫기" data-close>
+          <span aria-hidden="true">×</span>
+          </button>
+          <!-- Close -->
+          
+          <div class="content">
+          <h2 class="title">1년간 자산관리를 위해 소요되는 시간 (주식투자 기준)</h2>
+          
+          <img src="images/07_popup.png" class="PC" alt="popup">
+          <img src="images/07_popup_TM.png" class="TM" alt="popup">
+          
+          <p>
+            ※ 수치는 직접 투자할 때와 에어포인트를 이용할 때의 연간 소요 시간을 비교한 값입니다. <br class="none">
+            연간 거래일 250일 기준이며 투자 방식 및 개인의 매매 빈도에 따라 <br class="none">
+            실제 소요 시간에는 차이가 있을 수 있습니다.
+          </p>
+          </div>
+          <!-- Content -->
+          </div>
+          <!-- Panel -->
+          </div>
+          <!-- popup_3 -->
+
+      <script>
       AOS.init();
       AOS.init({
         disable: function () {
